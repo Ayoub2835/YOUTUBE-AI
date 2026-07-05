@@ -69,7 +69,8 @@ class Settings:
     tts_provider: str = field(default_factory=lambda: os.getenv("TTS_PROVIDER", "gtts").lower())
     elevenlabs_api_key: Optional[str] = field(default_factory=lambda: os.getenv("ELEVENLABS_API_KEY"))
     elevenlabs_voice_id: str = field(
-        default_factory=lambda: os.getenv("ELEVENLABS_VOICE_ID", "21m00Tcm4TlvDq8ikWAM")
+        # Víctor - Persuasive Storyteller: natural Mexican-Spanish male voice
+        default_factory=lambda: os.getenv("ELEVENLABS_VOICE_ID", "tSdO3lUIODN7SK6eWVhu")
     )
     openai_tts_voice: str = field(default_factory=lambda: os.getenv("OPENAI_TTS_VOICE", "alloy"))
     tts_language: str = field(default_factory=lambda: os.getenv("TTS_LANGUAGE", "en"))
